@@ -108,9 +108,14 @@ body {
   color: var(--link-title-color);
 }
 
+.site-navigation-link.current,
 .site-navigation-link:hover,
-.site-navigation-link:focus {
+.site-navigation-link:focus,
+.site-navigation-link.current::after,
+.site-navigation-link:hover::after,
+.site-navigation-link:focus::after {
   color: var(--hover-logo-color);
+  visibility: visible;
 }
 
 .site-navigation-link::after {
@@ -123,11 +128,6 @@ body {
   background: #2196f3;
   border-radius: 2px;
   visibility: hidden;
-}
-
-.site-navigation-link:hover::after,
-.site-navigation-link:focus::after {
-  visibility: visible;
 }
 
 .contacts {
