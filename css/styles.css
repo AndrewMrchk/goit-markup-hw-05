@@ -122,9 +122,6 @@ body {
   opacity: 0;
 }
 
-.site-navigation-link.current,
-.site-navigation-link:hover,
-.site-navigation-link:focus,
 .site-navigation-link.current::after {
   color: var(--hover-logo-color);
   opacity: 1;
